@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+*{
+  color: #fff;
+}
+
+body{
+  background-color: black;
+}
+
+#tasklist::-webkit-scrollbar{
+  display: none;
+}
+
+/* Add to your CSS file */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+input[type="date"]::placeholder {
+  color: #9CA3AF;
+}
