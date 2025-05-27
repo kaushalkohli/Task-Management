@@ -21,24 +21,24 @@ function Login({handleLogin}) {
                 <input 
                     onChange={(e)=>setemail(e.target.value)}
                     value={email}
-                    className='bg-gray-800 rounded px-4 py-2 w-full focus:outline-white' 
+                    className='bg-gray-800 rounded px-4 py-2 w-full focus:outline-white text-center' 
                     type="email" 
-                    placeholder='Enter your email' 
+                    placeholder='admin@gmail.com' 
                     required
                 />
                 <input 
                     onChange={(e)=>setpassword(e.target.value)}
                     value={password}
-                    className='bg-gray-800 rounded px-4 py-2 w-full focus:outline-white ' 
+                    className='bg-gray-800 rounded px-4 py-2 w-full focus:outline-white text-center' 
                     type="password" 
-                    placeholder='Enter your password' 
+                    placeholder='123' 
                     required
                 />
                 <button className='bg-blue-500 hover:bg-blue-600 px-6 py-2 w-full rounded-md transition-colors' >
                     Log in 
                 </button>
+                < a href="/data.html" className='font-semibold hover:to-blue-700'>See Employees Details</a>
             </form>
-            
         </div>
     </div>
   )
